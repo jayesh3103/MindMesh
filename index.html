@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MindMesh</title>
+    <title>MindMesh - Futuristic AI Cognitive Journal Website</title>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- MindMesh Agent (Dialogflow Messenger) -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="MindMesh"
+      agent-id="f1ccc3c3-fb40-42d9-bf59-12f51d189345"
+      language-code="en"
+    ></df-messenger>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
